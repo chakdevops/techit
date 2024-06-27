@@ -17,10 +17,12 @@
 # Example 2:
 # Use an official lightweight Python image as base
 FROM python:3.9-slim
+
 # Set the working directory
 WORKDIR /usr/src/app
+
 # The ENTRYPOINT specifies the executable to run - 'ping' in this case.
 ENTRYPOINT ["ping"]
-# The CMD specifies the default argument to the ENTRYPOINT -
-'localhost' here.
+
+# The CMD specifies the default argument to the ENTRYPOINT - 'localhost' here.
 CMD ["localhost"]
