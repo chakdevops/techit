@@ -10,4 +10,5 @@ apt install -y curl
 WORKDIR /etc
 
 # Define default command
-CMD ["bash"]
+ENTRYPOINT ["hostname"]
+#CMD ["bash"]
